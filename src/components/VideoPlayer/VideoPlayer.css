@@ -1,0 +1,38 @@
+.video-player {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 99;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.video-container {
+  position: relative;
+  width: 90%;
+  max-width: 1000px;
+}
+.video-player video {
+  width: 100%;
+  height: auto;
+}
+.close-btn {
+  position: absolute;
+  top: 10px; 
+  right: 10px; 
+  background: #fff;
+  box-shadow: transparent 0 0 0 3px, rgba(18, 18, 18, .2) 0 3px 10px;
+  color: #212121;
+  padding: 12px 13px 8px 13px;
+  font-size: 18px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 0;
+}
+.close-btn:hover {
+  background: #a9cdb4;
+}
+

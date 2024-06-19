@@ -1,0 +1,238 @@
+.projects {
+  width: 100%;
+  padding-bottom: 150px;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+.projects-content {
+  width: 90%;
+  box-shadow: transparent 0 0 0 3px,rgba(18, 18, 18, .2) 0 6px 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 120px 450px;
+}
+.projects-content h1 {
+  width: 100%;
+  text-align: center;
+  font-size: 36px;
+  font-weight: 600;
+  margin-top: 15px;
+  color: #4f4f4f;
+}
+.projects-content section {
+  margin-top: 80px;
+  margin-bottom: 110px;
+  display: flex;
+  align-items: flex-start;
+}
+.reversed-section {
+  flex-direction: row-reverse;
+}
+.projects-content section div {
+  width: 50%;
+  color: black;
+}
+.project-video {
+  position: relative;
+  flex: 1;
+}
+.projects-content section h2 {
+  font-size: 34px;
+  font-weight: 600;
+  color: #7cbb8f;
+  margin-bottom: 20px;
+}
+.right-video {
+  text-align: right;
+}
+.video-img {
+  width: 90%;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.play-icon {
+  color: #f5f5f5;
+  font-size: 60px;
+  position: absolute;
+  top: 50%;
+  left: 45%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+.play-icon-back {
+  color: #4f4f4f;
+  font-size: 50px;
+  position: absolute;
+  top: 50%;
+  left: 45%;
+  transform: translate(-50%, -50%);
+}
+.project-video:hover .play-icon {
+  color: #7cbb8f;
+}
+.project-video:hover .video-img {
+  filter: brightness(0.9);
+}
+.right-play-icon {
+  left: 55%;
+}
+.dbtn {
+  margin-top: 20px;
+}
+.project-description {
+  font-size: 24px;
+  margin-bottom: 10px;
+  line-height: 1.4;
+}
+
+/* --------- media query --------- */
+
+@media (max-width: 3300px){
+  .projects-content {
+    padding: 90px 350px;
+  }
+}
+@media (max-width: 3000px){
+  .projectss-content {
+    padding: 80px 270px;
+  }
+}
+@media (max-width: 2600px){
+  .projects-content {
+    padding: 70px 170px;
+  }
+}
+@media (max-width: 2300px){
+  .projects-content {
+    padding: 60px 170px;
+  }
+  .project-description{
+    font-size: 20px;
+  }
+}
+@media (max-width: 2100px){
+  .project-description{
+    font-size: 18px;
+  }
+}
+@media (max-width: 1750px){
+  .projects-content {
+    padding: 60px 150px;
+  }
+  .projects-content h1 {
+    font-size: 32px;
+    margin-top: 10px;
+  }
+  .projects-content section h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+  .projects-content section {
+    margin-top: 50px;
+    margin-bottom: 90px;
+  }
+  .project-description{
+    font-size: 17px;
+  }
+  .dbtn {
+    margin-top: 10px;
+  }
+}
+@media (max-width: 1450px){
+  .projects-content {
+    padding: 40px 130px;
+  }
+  .projects-content h1 {
+    font-size: 27px;
+  }
+  .projects-content section h2 {
+    font-size: 25px;
+  }
+  .projects-content section {
+    margin-bottom: 70px;
+  }
+  .project-description{
+    font-size: 15px;
+  }
+}
+@media (max-width: 1200px){
+  .projects-content {
+    padding: 40px 110px;
+  }
+  .project-description{
+    font-size: 14px;
+  }
+  .play-icon {
+    font-size: 40px;
+  }
+  .play-icon-back {
+    font-size: 35px;
+  }
+}
+@media (max-width: 1000px){
+  .projects-content {
+    padding: 30px 100px;
+  }
+  .projects-content h1 {
+    font-size: 24px;
+  }
+  .projects-content section h2 {
+    font-size: 22px;
+  }
+}
+@media (max-width: 900px){
+  .hand-holder {
+    visibility: hidden;
+    width: 0%;
+  }
+  .hero-text {
+    width: 100%;
+  }
+  .projects-content h1 {
+    font-size: 20px;
+  }
+  .projects-content section h2 {
+    font-size: 20px;
+  }
+  .projects-content section {
+    margin-top: 30px;
+    margin-bottom: 70px;
+  }
+  .projects-content section {
+    flex-direction: column;
+  }
+  .projects-content section div {
+    width: 100%;
+  }
+  .projects-content section button {
+    margin-bottom: 30px;
+  }
+  .video-img {
+    width: 100%;
+  }
+  .play-icon {
+    left: 50%;
+  }
+  .play-icon-back {
+    left: 50%;
+  }
+}
+@media (max-width: 700px){
+  .projects-content {
+    padding: 30px 70px;
+  }
+}
+@media (max-width: 600px){
+  .projects-content {
+    padding: 30px 60px;
+  }
+}
+@media (max-width: 500px){
+  .projects-content {
+    width: 100%;
+    padding: 30px 50px;
+  }
+}

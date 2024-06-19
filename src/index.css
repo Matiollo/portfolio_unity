@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Outfit", sans-serif;
+}
+body{
+  background: #eeeeee;
+}
+a{
+  text-decoration: none;
+  color: inherit;
+  line-height: 1;
+  cursor: pointer;
+}
+.container{
+  padding-left: 8%;
+  padding-right: 8%;
+}
+.btn{
+  background: #fff;
+  box-shadow: transparent 0 0 0 3px,rgba(18, 18, 18, .2) 0 3px 10px;
+  width: 180px;
+  color: #212121;
+  padding: 16px 30px;
+  font-size: 18px;
+  border-radius: 30px;
+  cursor: pointer;
+  border: 0;
+  outline: 0;
+  margin-bottom: 10px;
+}
+.btn:hover {
+  background: #a9cdb4;
+}
+.btn.dark-btn{
+  background: #181818;
+  color: #fff;
+}
+.btn.dark-btn:hover {
+  background: #363636;
+}
+
+.description-text{
+  font-size: 18px;
+}
+
+/* --------- media query --------- */
+
+@media (max-width: 2100px){
+  .btn {
+    width: 160px; 
+    padding: 14px 25px;
+    font-size: 16px;
+  }
+}
+@media (max-width: 1600px){
+  .btn {
+    width: 140px; 
+    padding: 12px 25px;
+    font-size: 14px;
+  }
+}
+@media (max-width: 1450px){
+  .btn {
+    width: 130px; 
+    padding: 10px 20px;
+    font-size: 12px;
+  }
+}
+@media (max-width: 1200px){
+  .container{
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+@media (max-width: 1100px){
+  .description-text{
+    font-size: 14px;
+  }
+}
+@media (max-width: 500px){
+  .btn {
+    width: 110px; 
+    padding: 10px 20px;
+    font-size: 12px;
+  }
+}
+
