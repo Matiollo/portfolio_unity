@@ -9,7 +9,7 @@ const VideoPlayer = ({ videoSrc, onClose }) => {
   useEffect(() => {
     const importVideo = async () => {
       try {
-        const module = await import(videoSrc);
+        const module = await import(/* @vite-ignore */ videoSrc);
         setVideoURL(module.default);
       } catch (error) {
         console.error('Error loading video:', error);

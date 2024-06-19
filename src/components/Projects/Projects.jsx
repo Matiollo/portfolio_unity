@@ -44,7 +44,7 @@ const Projects = () => {
             </p>
             <button className='btn dbtn' onClick={handleSeeLavaFloor}>See code</button>
           </div>
-          <div className='project-video' onClick={() => handleVideoChange('../../assets/lava_floor.mp4')}>
+          <div className='project-video' onClick={() => handleVideoChange('../../../lava_floor.mp4')}>
             <img src={clickbait1} alt='' className='video-img' />
             <IoPlay className='play-icon-back' />
             <FaCirclePlay className='play-icon' />
@@ -65,7 +65,7 @@ const Projects = () => {
             </p>
             <button className='btn dbtn' onClick={handleSeeRubiksCube}>See code</button>
           </div>
-          <div className='project-video right-video' onClick={() => handleVideoChange('../../assets/rubiks_cube.mp4')}>
+          <div className='project-video right-video' onClick={() => handleVideoChange('../../../rubiks_cube.mp4')}>
             <img src={clickbait2} alt='' className='video-img' />
             <IoPlay className='play-icon-back right-play-icon' />
             <FaCirclePlay className='play-icon right-play-icon' />
