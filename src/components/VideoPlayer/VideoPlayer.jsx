@@ -1,28 +1,14 @@
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 import './VideoPlayer.css'
-import { MdClose } from "react-icons/md";
+import { MdClose } from "react-icons/md"
+import lava_floor_video from '../../../public/lava_floor.mp4'
+import rubiks_cube_video from '../../../public/rubiks_cube.mp4'
 
-const VideoPlayer = ({ videoSrc, onClose }) => {
-  
-  const [videoURL, setVideoURL] = useState('');
-
-  useEffect(() => {
-    const importVideo = async () => {
-      try {
-        const module = await import(/* @vite-ignore */ videoSrc);
-        setVideoURL(module.default);
-      } catch (error) {
-        console.error('Error loading video:', error);
-      }
-    };
-
-    importVideo();
-  }, [videoSrc]);
-  
+const VideoPlayer = ({ videoSrc, onClose }) => {  
   return (
     <div className='video-player'>
       <div className='video-container'>
-        <video src={videoURL} autoPlay controls></video>
+        <video src={videoSrc == 'lava_floor' ? lava_floor_video : rubiks_cube_video} autoPlay controls></video>
         <button className="close-btn" onClick={onClose}><MdClose /></button>
       </div>
     </div>
